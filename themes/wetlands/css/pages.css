@@ -16,6 +16,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #F7F4F4;
+  color: #3A3333;
 }
 
 #page {
@@ -109,7 +110,6 @@ body {
  */
 
 #content {
-  font-size: 80%;
 }
 
 .region-highlighted {
