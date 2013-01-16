@@ -18,30 +18,116 @@ ul.nice-menu ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  border-top: 1px solid #ccc;
 }
 
 ul.nice-menu li {
-  border: 1px solid #ccc;
   border-top: 0;
   float: left; /* LTR */
   background-color: #eee;
+  font-weight: normal;
+  border-bottom: 1px solid #ccc;
+}
+
+ul.nice-menu li.first {
+  border-left: 1px solid #ccc;
+}
+
+ul.nice-menu li.last {
+  border-right: 1px solid #ccc;
+}
+
+ul.nice-menu li:hover {
+	background-color: #ccc;
+}
+
+ul.nice-menu li.active-trail {
+	font-weight: bold;
 }
 
 ul.nice-menu a {
   padding: 0.3em 5px 0.3em 5px;
+  color: black;
+  text-decoration: none;
 }
 
 ul.nice-menu ul {
   top: 1.8em;
   left: -1px; /* LTR */
   border: 0;
-  border-top: 1px solid #ccc;
   margin-right: 0; /* LTR */
 }
 
 ul.nice-menu ul li {
   width: 12.5em;
+}
+
+/******************************
+ HORIZONTAL (down) menus
+******************************/
+
+ul.nice-menu-down {
+  float: left; /* LTR */
+}
+
+ul.nice-menu-down li {
+  
+}
+
+ul.nice-menu-down li li {
+  border-top: 0;
+}
+
+ul.nice-menu-down ul {
+  left: 0; /* LTR */
+}
+
+ul.nice-menu-down ul li {
+  clear: both;
+  border-top: 0;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 0;
+}
+
+ul.nice-menu-down ul li.first {
+  border-top: 1px solid #ccc;
+}
+
+ul.nice-menu-down ul li.last {
+  border-bottom: 1px solid #ccc;
+}
+
+ul.nice-menu-down li ul li ul {
+  left: 12.5em; /* LTR */
+  top: -1px;
+}
+
+ul.nice-menu-down .menuparent a {
+  padding-right: 15px; /* LTR */
+}
+
+ul.nice-menu-down li.menuparent {
+  background: #eee url(arrow-down.png) right center no-repeat; /* LTR */
+}
+
+ul.nice-menu-down li.menuparent:hover {
+  background: #ccc url(arrow-down.png) right center no-repeat; /* LTR */
+}
+
+ul.nice-menu-down li.menuparent.active-trail {
+  /*background: #ccc url(arrow-down.png) right center no-repeat; /* LTR */
+}
+
+ul.nice-menu-down li li.menuparent {
+  background: #eee url(arrow-right.png) right center no-repeat; /* LTR */
+}
+
+ul.nice-menu-down li li.menuparent:hover {
+  background: #ccc url(arrow-right.png) right center no-repeat; /* LTR */
+}
+
+ul.nice-menu-down li li.menuparent.active-trail {
+	/*background: #ccc url(arrow-right.png) right center no-repeat; /* LTR */
 }
 
 /******************************
@@ -104,55 +190,6 @@ ul.nice-menu-left a, ul.nice-menu-left ul a {
   padding-left: 14px;
 }
 
-/******************************
- HORIZONTAL (down) menus
-******************************/
-
-ul.nice-menu-down {
-  float: left; /* LTR */
-  border: 0;
-}
-
-ul.nice-menu-down li {
-  border-top: 1px solid #F0F0C8;
-}
-
-ul.nice-menu-down li li {
-  border-top: 0;
-}
-
-ul.nice-menu-down ul {
-  left: 0; /* LTR */
-}
-
-ul.nice-menu-down ul li {
-  clear: both;
-}
-
-ul.nice-menu-down li ul li ul {
-  left: 12.5em; /* LTR */
-  top: -1px;
-}
-
-ul.nice-menu-down .menuparent a {
-  padding-right: 15px; /* LTR */
-}
-
-ul.nice-menu-down li.menuparent {
-  background: #eee url(arrow-down.png) right center no-repeat; /* LTR */
-}
-
-ul.nice-menu-down li.menuparent:hover {
-  background: #ccc url(arrow-down.png) right center no-repeat; /* LTR */
-}
-
-ul.nice-menu-down li li.menuparent {
-  background: #eee url(arrow-right.png) right center no-repeat; /* LTR */
-}
-
-ul.nice-menu-down li li.menuparent:hover {
-  background: #ccc url(arrow-right.png) right center no-repeat; /* LTR */
-}
 
 /******************************
  Garland-specific CSS
