@@ -163,3 +163,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffed8b', end
   list-style-type: none;
   list-style-image: none;
 }
+.language-switcher-locale-url li a.language-link {
+	color: #3A3333;
+	text-decoration: none;
+}
+.language-switcher-locale-url li a.language-link:hover {
+	font-weight: bold;
+}
