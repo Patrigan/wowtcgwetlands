@@ -114,7 +114,7 @@ ul.nice-menu-down li.menuparent {
 }
 
 ul.nice-menu-down li.menuparent:hover {
-  background: #e38839 url(arrow-down-hover.png) right center no-repeat; /* LTR */
+  background: #e38839 url(arrow-down.png) right center no-repeat; /* LTR */
 	border-radius: 6px 6px 0 0;
 	-moz-border-radius: 6px 6px 0 0;
 	-webkit-border-radius: 6px 6px 0 0;
@@ -129,7 +129,7 @@ ul.nice-menu-down li li.menuparent {
 }
 
 ul.nice-menu-down li li.menuparent:hover {
-  background: #e38839 url(arrow-right-hover.png) right center no-repeat; /* LTR */
+  background: #e38839 url(arrow-right.png) right center no-repeat; /* LTR */
 	border-radius: 6px 0 0 6px;
 	-moz-border-radius: 6px 0 0 6px;
 	-webkit-border-radius: 6px 0 0 6px;
