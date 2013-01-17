@@ -18,26 +18,33 @@ ul.nice-menu ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  background-color: #eee;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
 }
 
 ul.nice-menu li {
+  margin: 0.3em 5px 0.3em 5px;
+  padding: 0.3em 5px 0.3em 5px;
   border-top: 0;
   float: left; /* LTR */
-  background-color: #eee;
   font-weight: normal;
-  border-bottom: 1px solid #ccc;
 }
-
+/*
 ul.nice-menu li.first {
   border-left: 1px solid #ccc;
 }
 
 ul.nice-menu li.last {
   border-right: 1px solid #ccc;
-}
+}*/
 
 ul.nice-menu li:hover {
 	background-color: #ccc;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
 }
 
 ul.nice-menu li.active-trail {
@@ -45,15 +52,12 @@ ul.nice-menu li.active-trail {
 }
 
 ul.nice-menu a {
-  padding: 0.3em 5px 0.3em 5px;
   color: black;
   text-decoration: none;
 }
 
 ul.nice-menu ul {
-  top: 1.8em;
   left: -1px; /* LTR */
-  border: 0;
   margin-right: 0; /* LTR */
 }
 
@@ -79,27 +83,25 @@ ul.nice-menu-down li li {
 
 ul.nice-menu-down ul {
   left: 0; /* LTR */
+  border: 2px solid #ccc;
 }
 
 ul.nice-menu-down ul li {
   clear: both;
-  border-top: 0;
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-  border-bottom: 0;
 }
 
+/*
 ul.nice-menu-down ul li.first {
   border-top: 1px solid #ccc;
 }
 
 ul.nice-menu-down ul li.last {
   border-bottom: 1px solid #ccc;
-}
+}*/
 
 ul.nice-menu-down li ul li ul {
-  left: 12.5em; /* LTR */
-  top: -1px;
+  left: 13.1em; /* LTR */
+  top: 0px;
 }
 
 ul.nice-menu-down .menuparent a {
@@ -112,6 +114,9 @@ ul.nice-menu-down li.menuparent {
 
 ul.nice-menu-down li.menuparent:hover {
   background: #ccc url(arrow-down.png) right center no-repeat; /* LTR */
+	border-radius: 6px 6px 0 0;
+	-moz-border-radius: 6px 6px 0 0;
+	-webkit-border-radius: 6px 6px 0 0;
 }
 
 ul.nice-menu-down li.menuparent.active-trail {
@@ -124,6 +129,9 @@ ul.nice-menu-down li li.menuparent {
 
 ul.nice-menu-down li li.menuparent:hover {
   background: #ccc url(arrow-right.png) right center no-repeat; /* LTR */
+	border-radius: 6px 0 0 6px;
+	-moz-border-radius: 6px 0 0 6px;
+	-webkit-border-radius: 6px 0 0 6px;
 }
 
 ul.nice-menu-down li li.menuparent.active-trail {
@@ -188,62 +196,4 @@ ul.nice-menu-left li li.menuparent:hover {
 
 ul.nice-menu-left a, ul.nice-menu-left ul a {
   padding-left: 14px;
-}
-
-
-/******************************
- Garland-specific CSS
-******************************/
-
-/**
- * Global CSS for ALL menu types
- */
-ul.nice-menu li {
-  margin: 0;
-  padding-left: 0; /* LTR */
-  background-image: none;
-}
-
-#header-region ul.nice-menu li {
-  margin: 0;
-  /* Padding rules are needed to deal with Garland's header line-height. */
-  padding-top: 0.1em;
-  padding-bottom: 0.1em;
-  background: #eee;
-}
-
-#header-region ul.nice-menu ul {
-  top: 1.8em;
-  left: -1px; /* LTR */
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin-right: 0; /* LTR */
-}
-
-#header-region ul.nice-menu ul {
-  top: 1.7em;
-}
-
-/**
- * HORIZONTAL (down) menus
- */
-#header-region ul.nice-menu-down li ul li ul {
-  left: 12.5em; /* LTR */
-  top: -1px;
-}
-
-#header-region ul.nice-menu-down li.menuparent {
-  background: #eee url(arrow-down.png) right center no-repeat; /* LTR */
-}
-
-#header-region ul.nice-menu-down li.menuparent:hover {
-  background: #ccc url(arrow-down.png) right center no-repeat; /* LTR */
-}
-
-#header-region ul.nice-menu-down li li.menuparent {
-  background: #eee url(arrow-right.png) right center no-repeat; /* LTR */
-}
-
-#header-region ul.nice-menu-down li li.menuparent:hover {
-  background: #ccc url(arrow-right.png) right center no-repeat; /* LTR */
 }
