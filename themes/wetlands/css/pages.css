@@ -139,13 +139,15 @@ h3.title { /* Comment title */
 
 h1,
 h2,
+h2 a,
 h3,
 h4,
 h5,
 h6 {
 	font-family: Verdana, Calibri, Helvetica, "Nimbus Sans L", sans-serif;
 	text-shadow: -1px 1px 1px rgba(0,0,0,0.6);
-	color:#462768;
+	color:#a91f23;
+	text-decoration: none;
 }
 
 tr.even { /* Some tables have rows marked even or odd. */
