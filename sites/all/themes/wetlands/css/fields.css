@@ -50,6 +50,17 @@
 }
 
 .field-type-taxonomy-term-reference {
+	font-size: 80%;
+}
+.field-type-taxonomy-term-reference .field-label{
+	display:inline;
+}
+.field-type-taxonomy-term-reference .field-items{
+	display:inline;
+}
+.field-type-taxonomy-term-reference .field-item{
+	margin-left: 5px;
+	display:inline;
 }
 
 .field-type-number-integer {
