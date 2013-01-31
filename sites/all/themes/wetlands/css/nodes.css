@@ -42,6 +42,9 @@
 	padding-bottom: 5px;
 	margin-bottom: 5px;
 }
+.node-teaser p{
+	margin: 0;
+}
 
 /*
  * All nodes are given a node-FOO class that describes the type of content that
@@ -53,6 +56,24 @@
 }
 
 .node-article { /* Article content node */
+}
+.node-article .submitted { /* Article content node */
+	float:right;
+	background-color: #a91f23;
+	border: 1px solid #e38839;
+	color: #F0F0C8;
+	padding: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	font-size: 70%;
+	line-height: 1em;
+	width: 80px;
+	text-align: center;
+}
+.node-article .submitted a{ /* Article content node */
+	color: #F0F0C8;
+	text-decoration: none;
 }
 
 .node-unpublished { /* Unpublished nodes */
