@@ -250,10 +250,28 @@ span.field-label { /* The inline field label used by the Fences module */
  */
 
 #footer {
-	padding-top: 10px;
+	padding: 10px;
 	border-top: #F0F0C8 solid 1px !important;
 	text-align: center;
 }
+
+#footer .block{
+	margin:0;
+	-webkit-box-shadow: 0px 0px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow: 0px 0px 0px rgba(50, 50, 50, 0.75);
+	box-shadow: 0px 0px 0px rgba(50, 50, 50, 0.75);
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	border: #F0F0C8 solid 0px;
+	padding: 0px;
+	font-size:70%;
+}
+
+#footer p{
+	margin:0;
+}
+
 
 /*
  * Page bottom
