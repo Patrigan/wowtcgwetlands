@@ -51,6 +51,7 @@
 
 .field-type-taxonomy-term-reference {
 	font-size: 80%;
+	float:right;
 }
 .field-type-taxonomy-term-reference .field-label{
 	display:inline;
