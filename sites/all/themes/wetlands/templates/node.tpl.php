@@ -94,7 +94,6 @@
       <?php print render($title_suffix); ?>
 
       <?php if ($display_submitted): ?>
-	      <?php if ($teaser): ?>
 	      <div class="submitted">
 	      	<div class="author">
 	      		<?php print $name; ?>
@@ -103,12 +102,6 @@
 	      		<?php print format_date($node->created, 'custom', 'd M \'y'); ?>
 	      	</div>
 	    	</div>
-	      <?php else: ?>
-        <p class="submitted">
-          <?php print $user_picture; ?>
-          <?php print $submitted; ?>
-        </p>
-    	  <?php endif; ?>
       <?php endif; ?>
 
       <?php if ($unpublished): ?>
